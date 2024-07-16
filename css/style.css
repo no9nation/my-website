@@ -1,0 +1,81 @@
+/* css/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.toc {
+  width: 250px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.toc-header {
+  cursor: pointer;
+  text-align: center; /* 이미지가 중앙에 위치하도록 설정 */
+}
+
+.toc-header img {
+  width: 100%; /* 이미지가 헤더의 전체 너비를 차지하도록 설정 */
+  height: auto;
+}
+
+.toc-content {
+  margin-top: 10px;
+}
+
+.toc-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc-content li {
+  margin: 5px 0;
+}
+
+/* 장(chapter)는 검정색 볼드체 */
+.chapter {
+  color: #000; /* 검정색 */
+  font-weight: bold; /* 볼드체 */
+}
+
+/* 절(section)는 파란색 볼드체 */
+.section {
+  color: #007bff; /* 파란색 */
+  font-weight: bold; /* 볼드체 */
+}
+
+/* 조(article)는 파란색 */
+.toc-content a {
+  text-decoration: none;
+  color: #007bff; /* 파란색 */
+}
+
+.toc-content a:hover, .chapter:hover, .section:hover {
+  text-decoration: underline;
+}
+
+.articles, .sub-articles {
+  display: none;
+  padding-left: 20px;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.content h1, .content h2, .content h3 {
+  margin-top: 50px;
+}

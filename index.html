@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Table of Contents</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toc">
+      <a href="http://verasafe.com" target="_blank" class="toc-header">
+         <img src="img/hide-toc.jpg" alt="Hide table of contents" class="toc-toggle">
+      </a>
+
+      <div class="toc-content">
+        <ul>
+          <li class="chapter" data-target="chapter1">제1장: 일반 규정</li>
+          <ul id="chapter1" class="articles">
+            <li><a href="#article1">제1조: 목적</a></li>
+            <li><a href="#article2">제2조: 적용 범위</a></li>
+            <li><a href="#article3">제3조: 정의</a></li>
+            <li><a href="#article4">제4조: AI 이해력</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter2">제2장: 금지된 인공지능 관행</li>
+          <ul id="chapter2" class="articles">
+            <li><a href="#article5">제5조: 금지된 인공지능 관행</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter3">제3장: 고위험 인공지능 시스템</li>
+          <ul id="chapter3" class="articles">
+            <li class="section" data-target="section1">제1절: 고위험 인공지능 시스템의 분류</li>
+            <ul id="section1" class="sub-articles">
+              <li><a href="#article6">제6조: 고위험 인공지능 시스템의 분류 규칙</a></li>
+              <li><a href="#article7">제7조: 부속서 III의 개정</a></li>
+            </ul>
+            <li class="section" data-target="section2">제2절: 고위험 인공지능 시스템의 요구사항</li>
+            <ul id="section2" class="sub-articles">
+              <li><a href="#article8">제8조: 요구사항 준수</a></li>
+              <li><a href="#article9">제9조: 위험 관리 시스템</a></li>
+              <li><a href="#article10">제10조: 데이터 및 데이터 거버넌스</a></li>
+              <li><a href="#article11">제11조: 기술 문서</a></li>
+              <li><a href="#article12">제12조: 기록 보관</a></li>
+              <li><a href="#article13">제13조: 배포자에 대한 투명성 및 정보 제공</a></li>
+              <li><a href="#article14">제14조: 인간 감독</a></li>
+              <li><a href="#article15">제15조: 정확성, 견고성 및 사이버 보안</a></li>
+            </ul>
+            <li class="section" data-target="section3">제3절: 고위험 인공지능 시스템 제공자, 배포자 및 기타 당사자의 의무</li>
+            <ul id="section3" class="sub-articles">
+              <li><a href="#article16">제16조: 고위험 인공지능 시스템 제공자의 의무</a></li>
+              <li><a href="#article17">제17조: 품질 관리 시스템</a></li>
+              <li><a href="#article18">제18조: 문서 보관</a></li>
+              <li><a href="#article19">제19조: 자동 생성된 로그</a></li>
+              <li><a href="#article20">제20조: 시정 조치 및 정보 제공 의무</a></li>
+              <li><a href="#article21">제21조: 권한 있는 기관과의 협력</a></li>
+              <li><a href="#article22">제22조: 고위험 인공지능 시스템 제공자의 공인 대리인</a></li>
+              <li><a href="#article23">제23조: 수입자의 의무</a></li>
+              <li><a href="#article24">제24조: 유통업자의 의무</a></li>
+              <li><a href="#article25">제25조: 인공지능 가치 사슬에 따른 책임</a></li>
+              <li><a href="#article26">제26조: 고위험 인공지능 시스템 배포자의 의무</a></li>
+              <li><a href="#article27">제27조: 고위험 인공지능 시스템에 대한 기본권 영향 평가</a></li>
+            </ul>
+            <li class="section" data-target="section4">제4절: 통지 기관 및 통지된 기관</li>
+            <ul id="section4" class="sub-articles">
+              <li><a href="#article28">제28조: 통지 기관</a></li>
+              <li><a href="#article29">제29조: 통지 평가 기관에 대한 신청</a></li>
+              <li><a href="#article30">제30조: 통지 절차</a></li>
+              <li><a href="#article31">제31조: 통지된 기관에 관한 요구사항</a></li>
+              <li><a href="#article32">제32조: 통지된 기관에 관한 요구사항 준수 추정</a></li>
+              <li><a href="#article33">제33조: 통지된 기관의 자회사 및 하도급</a></li>
+              <li><a href="#article34">제34조: 통지된 기관의 운영 의무</a></li>
+              <li><a href="#article35">제35조: 이 규정에 따라 지정된 통지된 기관의 식별 번호 및 목록</a></li>
+              <li><a href="#article36">제36조: 통지의 변경</a></li>
+              <li><a href="#article37">제37조: 통지된 기관의 자격에 대한 이의 제기</a></li>
+              <li><a href="#article38">제38조: 통지된 기관의 협력</a></li>
+              <li><a href="#article39">제39조: 제3국의 적합성 평가 기관</a></li>
+            </ul>
+            <li class="section" data-target="section5">제5절: 표준, 적합성 평가, 인증서, 등록</li>
+            <ul id="section5" class="sub-articles">
+              <li><a href="#article40">제40조: 조화된 표준 및 표준화 산출물</a></li>
+              <li><a href="#article41">제41조: 공통 사양</a></li>
+              <li><a href="#article42">제42조: 특정 요구사항에 대한 준수 추정</a></li>
+              <li><a href="#article43">제43조: 적합성 평가</a></li>
+              <li><a href="#article44">제44조: 인증서</a></li>
+              <li><a href="#article45">제45조: 통지된 기관의 정보 의무</a></li>
+              <li><a href="#article46">제46조: 적합성 평가 절차의 면제</a></li>
+              <li><a href="#article47">제47조: EU 적합성 선언</a></li>
+              <li><a href="#article48">제48조: CE 마크</a></li>
+              <li><a href="#article49">제49조: 등록</a></li>
+            </ul>
+          </ul>
+          <li class="chapter" data-target="chapter4">제4장: 특정 인공지능 시스템 및 범용 인공지능 모델의 제공자 및 배포자의 투명성 의무</li>
+          <ul id="chapter4" class="articles">
+            <li><a href="#article50">제50조: 특정 인공지능 시스템 및 범용 인공지능 모델의 제공자 및 사용자에 대한 투명성 의무</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter5">제5장: 범용 인공지능 모델</li>
+          <ul id="chapter5" class="articles">
+            <li class="section" data-target="section6">제1절: 분류 규칙</li>
+            <ul id="section6" class="sub-articles">
+              <li><a href="#article51">제51조: 체계적 위험이 있는 범용 인공지능 모델의 분류</a></li>
+              <li><a href="#article52">제52조: 절차</a></li>
+            </ul>
+            <li class="section" data-target="section7">제2절: 범용 인공지능 모델 제공자의 의무</li>
+            <ul id="section7" class="sub-articles">
+              <li><a href="#article53">제53조: 범용 인공지능 모델 제공자의 의무</a></li>
+              <li><a href="#article54">제54조: 공인 대리인</a></li>
+            </ul>
+            <li class="section" data-target="section8">제3절: 체계적 위험이 있는 범용 인공지능 모델 제공자의 의무</li>
+            <ul id="section8" class="sub-articles">
+              <li><a href="#article55">제55조: 체계적 위험이 있는 범용 인공지능 모델 제공자의 의무</a></li>
+              <li><a href="#article56">제56조: 실천 규범</a></li>
+            </ul>
+          </ul>
+          <li class="chapter" data-target="chapter6">제6장: 혁신 지원을 위한 조치</li>
+          <ul id="chapter6" class="articles">
+            <li><a href="#article57">제57조: 인공지능 규제 샌드박스</a></li>
+            <li><a href="#article58">제58조: 인공지능 규제 샌드박스의 상세한 준비 및 운영</a></li>
+            <li><a href="#article59">제59조: 인공지능 규제 샌드박스 내 공익 목적을 위한 특정 인공지능 시스템 개발을 위한 개인정보의 추가 처리</a></li>
+            <li><a href="#article60">제60조: 인공지능 규제 샌드박스 외부에서 실제 조건 하의 고위험 인공지능 시스템 시험</a></li>
+            <li><a href="#article61">제61조: 인공지능 규제 샌드박스 외부에서 실제 조건 하의 시험에 참여하기 위한 사전 동의</a></li>
+            <li><a href="#article62">제62조: 특히 중소기업, 신생 기업을 위한 제공자 및 배포자를 위한 조치</a></li>
+            <li><a href="#article63">제63조: 특정 운영자를 위한 면제</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter7">제7장: 거버넌스</li>
+          <ul id="chapter7" class="articles">
+            <li class="section" data-target="section9">제1절: 연합 수준의 거버넌스</li>
+            <ul id="section9" class="sub-articles">
+              <li><a href="#article64">제64조: 인공지능 사무국</a></li>
+              <li><a href="#article65">제65조: 유럽 인공지능 위원회의 설립 및 구조</a></li>
+              <li><a href="#article66">제66조: 위원회의 임무</a></li>
+              <li><a href="#article67">제67조: 자문 포럼</a></li>
+              <li><a href="#article68">제68조: 독립 전문가로 구성된 과학 패널</a></li>
+              <li><a href="#article69">제69조: 회원국의 전문가 풀 접근</a></li>
+            </ul>
+            <li class="section" data-target="section10">제2절: 국가 권한 기관</li>
+            <ul id="section10" class="sub-articles">
+              <li><a href="#article70">제70조: 국가 권한 기관 및 단일 연락 지점 지정</a></li>
+            </ul>
+          </ul>
+          <li class="chapter" data-target="chapter8">제8장: 고위험 인공지능 시스템을 위한 EU 데이터베이스</li>
+          <ul id="chapter8" class="articles">
+            <li><a href="#article71">제71조: 부속서 III에 나열된 고위험 인공지능 시스템을 위한 EU 데이터베이스</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter9">제9장: 시장 후 감시, 정보 공유, 시장 감시</li>
+          <ul id="chapter9" class="articles">
+            <li class="section" data-target="section11">제1절: 시장 후 감시</li>
+            <ul id="section11" class="sub-articles">
+              <li><a href="#article72">제72조: 제공자에 의한 시장 후 감시 및 고위험 인공지능 시스템에 대한 시장 후 감시 계획</a></li>
+            </ul>
+            <li class="section" data-target="section12">제2절: 중대한 사고에 대한 정보 공유</li>
+            <ul id="section12" class="sub-articles">
+              <li><a href="#article73">제73조: 중대한 사고 보고</a></li>
+            </ul>
+            <li class="section" data-target="section13">제3절: 집행</li>
+            <ul id="section13" class="sub-articles">
+              <li><a href="#article74">제74조: 연합 시장에서의 인공지능 시스템의 시장 감시 및 통제</a></li>
+              <li><a href="#article75">제75조: 범용 인공지능 시스템의 상호 지원, 시장 감시 및 통제</a></li>
+              <li><a href="#article76">제76조: 시장 감시 기관에 의한 실제 조건 하의 시험 감독</a></li>
+              <li><a href="#article77">제77조: 기본권 보호 기관의 권한</a></li>
+              <li><a href="#article78">제78조: 기밀성</a></li>
+              <li><a href="#article79">제79조: 국가 수준에서 위험을 제기하는 인공지능 시스템 처리 절차</a></li>
+              <li><a href="#article80">제80조: 부속서 III 적용에 따른 제공자가 고위험으로 분류하지 않은 인공지능 시스템 처리 절차</a></li>
+              <li><a href="#article81">제81조: 연합 보호 절차</a></li>
+              <li><a href="#article82">제82조: 위험을 제기하는 적합한 인공지능 시스템</a></li>
+              <li><a href="#article83">제83조: 공식적인 비준수</a></li>
+              <li><a href="#article84">제84조: 연합 인공지능 시험 지원 구조</a></li>
+            </ul>
+            <li class="section" data-target="section14">제4절: 구제책</li>
+            <ul id="section14" class="sub-articles">
+              <li><a href="#article85">제85조: 시장 감시 기관에 불만을 제기할 권리</a></li>
+              <li><a href="#article86">제86조: 개별 의사결정에 대한 설명을 받을 권리</a></li>
+              <li><a href="#article87">제87조: 위반 보고 및 보고자 보호</a></li>
+            </ul>
+            <li class="section" data-target="section15">제5절: 범용 인공지능 모델 제공자에 대한 감독, 조사, 집행 및 모니터링</li>
+            <ul id="section15" class="sub-articles">
+              <li><a href="#article88">제88조: 범용 인공지능 모델 제공자에 대한 의무 집행</a></li>
+              <li><a href="#article89">제89조: 모니터링 조치</a></li>
+              <li><a href="#article90">제90조: 과학 패널에 의한 체계적 위험 경고</a></li>
+              <li><a href="#article91">제91조: 문서 및 정보 요청 권한</a></li>
+              <li><a href="#article92">제92조: 평가 수행 권한</a></li>
+              <li><a href="#article93">제93조: 조치 요청 권한</a></li>
+              <li><a href="#article94">제94조: 범용 인공지능 모델의 경제 운영자에 대한 절차적 권리</a></li>
+            </ul>
+          </ul>
+          <li class="chapter" data-target="chapter10">제10장: 행동 강령 및 지침</li>
+          <ul id="chapter10" class="articles">
+            <li><a href="#article95">제95조: 특정 요구사항의 자발적 적용을 위한 행동 강령</a></li>
+            <li><a href="#article96">제96조: 이 규정의 시행에 관한 위원회의 지침</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter11">제11장: 권한 위임 및 위원회 절차</li>
+          <ul id="chapter11" class="articles">
+            <li><a href="#article97">제97조: 권한 위임의 행사</a></li>
+            <li><a href="#article98">제98조: 위원회 절차</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter12">제12장: 기밀성과 벌칙</li>
+          <ul id="chapter12" class="articles">
+            <li><a href="#article99">제99조: 벌칙</a></li>
+            <li><a href="#article100">제100조: 연합 기관, 기관 및 기구에 대한 행정 벌금</a></li>
+            <li><a href="#article101">제101조: 범용 인공지능 모델 제공자에 대한 벌금</a></li>
+          </ul>
+          <li class="chapter" data-target="chapter13">제13장: 최종 규정</li>
+          <ul id="chapter13" class="articles">
+            <li><a href="#article102">제102조: 규정 (EC) No 300/2008의 수정</a></li>
+            <li><a href="#article103">제103조: 규정 (EU) No 167/2013의 수정</a></li>
+            <li><a href="#article104">제104조: 규정 (EU) No 168/2013의 수정</a></li>
+            <li><a href="#article105">제105조: 지침 2014/90/EU의 수정</a></li>
+            <li><a href="#article106">제106조: 지침 (EU) 2016/797의 수정</a></li>
+            <li><a href="#article107">제107조: 규정 (EU) 2018/858의 수정</a></li>
+            <li><a href="#article108">제108조: 규정 (EU) 2018/1139의 수정</a></li>
+            <li><a href="#article109">제109조: 규정 (EU) 2019/2144의 수정</a></li>
+            <li><a href="#article110">제110조: 지침 (EU) 2020/1828의 수정</a></li>
+            <li><a href="#article111">제111조: 이미 시장에 출시되었거나 사용 개시된 인공지능 시스템</a></li>
+            <li><a href="#article112">제112조: 평가 및 검토</a></li>
+            <li><a href="#article113">제113조: 발효 및 적용</a></li>
+          </ul>
+          <li class="chapter" data-target="annex">부속서</li>
+          <ul id="annex" class="articles">
+            <li><a href="#annex1">부속서 I: 연합 조화 입법 목록</a></li>
+            <li><a href="#annex2">부속서 II: 범죄 목록</a></li>
+            <li><a href="#annex3">부속서 III: 고위험 인공지능 시스템</a></li>
+            <li><a href="#annex4">부속서 IV: 기술 문서</a></li>
+            <li><a href="#annex5">부속서 V: EU 적합성 선언</a></li>
+            <li><a href="#annex6">부속서 VI: 내부 통제 기반 적합성 평가 절차</a></li>
+            <li><a href="#annex7">부속서 VII: 품질 관리 시스템 평가 및 기술 문서 평가 기반 적합성</a></li>
+            <li><a href="#annex8">부속서 VIII: 고위험 인공지능 시스템 등록 시 제출할 정보 (제49조)</a></li>
+            <li><a href="#annex9">부속서 IX: 고위험 인공지능 시스템 등록 시 제출할 정보 (부속서 III / 제60조)</a></li>
+            <li><a href="#annex10">부속서 X: 자유, 보안 및 정의 영역에서 대규모 IT 시스템에 관한 연합 입법</a></li>
+            <li><a href="#annex11">부속서 XI: 제53조(1a)에 명시된 기술 문서</a></li>
+            <li><a href="#annex12">부속서 XII: 제53조(1b)에 명시된 투명성 정보</a></li>
+            <li><a href="#annex13">부속서 XIII: 체계적 위험이 있는 범용 인공지능 모델 지정 기준</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <h1 id="chapter1">제1장: 일반 규정</h1>
+      <h2 id="article1">제1조: 목적</h2>
+      <!-- Content for Article 1 -->
+      <h2 id="article2">제2조: 적용 범위</h2>
+      <!-- Content for Article 2 -->
+      <h2 id="article3">제3조: 정의</h2>
+      <!-- Content for Article 3 -->
+      <h2 id="article4">제4조: AI 이해력</h2>
+      <!-- Content for Article 4 -->
+
+      <h1 id="chapter2">제2장: 금지된 인공지능 관행</h1>
+      <h2 id="article5">제5조: 금지된 인공지능 관행</h2>
+      <!-- Content for Article 5 -->
+
+      <h1 id="chapter3">제3장: 고위험 인공지능 시스템</h1>
+      <h2 id="section1">제1절: 고위험 인공지능 시스템의 분류</h2>
+      <h3 id="article6">제6조: 고위험 인공지능 시스템의 분류 규칙</h3>
+      <!-- Content for Article 6 -->
+      <h3 id="article7">제7조: 부속서 III의 개정</h3>
+      <!-- Content for Article 7 -->
+
+      <h2 id="section2">제2절: 고위험 인공지능 시스템의 요구사항</h2>
+      <h3 id="article8">제8조: 요구사항 준수</h3>
+      <!-- Content for Article 8 -->
+      <h3 id="article9">제9조: 위험 관리 시스템</h3>
+      <!-- Content for Article 9 -->
+      <h3 id="article10">제10조: 데이터 및 데이터 거버넌스</h3>
+      <!-- Content for Article 10 -->
+      <h3 id="article11">제11조: 기술 문서</h3>
+      <!-- Content for Article 11 -->
+      <h3 id="article12">제12조: 기록 보관</h3>
+      <!-- Content for Article 12 -->
+      <h3 id="article13">제13조: 배포자에 대한 투명성 및 정보 제공</h3>
+      <!-- Content for Article 13 -->
+      <h3 id="article14">제14조: 인간 감독</h3>
+      <!-- Content for Article 14 -->
+      <h3 id="article15">제15조: 정확성, 견고성 및 사이버 보안</h3>
+      <!-- Content for Article 15 -->
+
+      <h2 id="section3">제3절: 고위험 인공지능 시스템 제공자, 배포자 및 기타 당사자의 의무</h2>
+      <h3 id="article16">제16조: 고위험 인공지능 시스템 제공자의 의무</h3>
+      <!-- Content for Article 16 -->
+      <h3 id="article17">제17조: 품질 관리 시스템</h3>
+      <!-- Content for Article 17 -->
+      <h3 id="article18">제18조: 문서 보관</h3>
+      <!-- Content for Article 18 -->
+      <h3 id="article19">제19조: 자동 생성된 로그</h3>
+      <!-- Content for Article 19 -->
+      <h3 id="article20">제20조: 시정 조치 및 정보 제공 의무</h3>
+      <!-- Content for Article 20 -->
+      <h3 id="article21">제21조: 권한 있는 기관과의 협력</h3>
+      <!-- Content for Article 21 -->
+      <h3 id="article22">제22조: 고위험 인공지능 시스템 제공자의 공인 대리인</h3>
+      <!-- Content for Article 22 -->
+      <h3 id="article23">제23조: 수입자의 의무</h3>
+      <!-- Content for Article 23 -->
+      <h3 id="article24">제24조: 유통업자의 의무</h3>
+      <!-- Content for Article 24 -->
+      <h3 id="article25">제25조: 인공지능 가치 사슬에 따른 책임</h3>
+      <!-- Content for Article 25 -->
+      <h3 id="article26">제26조: 고위험 인공지능 시스템 배포자의 의무</h3>
+      <!-- Content for Article 26 -->
+      <h3 id="article27">제27조: 고위험 인공지능 시스템에 대한 기본권 영향 평가</h3>
+      <!-- Content for Article 27 -->
+
+      <h2 id="section4">제4절: 통지 기관 및 통지된 기관</h2>
+      <h3 id="article28">제28조: 통지 기관</h3>
+      <!-- Content for Article 28 -->
+      <h3 id="article29">제29조: 통지 평가 기관에 대한 신청</h3>
+      <!-- Content for Article 29 -->
+      <h3 id="article30">제30조: 통지 절차</h3>
+      <!-- Content for Article 30 -->
+      <h3 id="article31">제31조: 통지된 기관에 관한 요구사항</h3>
+      <!-- Content for Article 31 -->
+      <h3 id="article32">제32조: 통지된 기관에 관한 요구사항 준수 추정</h3>
+      <!-- Content for Article 32 -->
+      <h3 id="article33">제33조: 통지된 기관의 자회사 및 하도급</h3>
+      <!-- Content for Article 33 -->
+      <h3 id="article34">제34조: 통지된 기관의 운영 의무</h3>
+      <!-- Content for Article 34 -->
+      <h3 id="article35">제35조: 이 규정에 따라 지정된 통지된 기관의 식별 번호 및 목록</h3>
+      <!-- Content for Article 35 -->
+      <h3 id="article36">제36조: 통지의 변경</h3>
+      <!-- Content for Article 36 -->
+      <h3 id="article37">제37조: 통지된 기관의 자격에 대한 이의 제기</h3>
+      <!-- Content for Article 37 -->
+      <h3 id="article38">제38조: 통지된 기관의 협력</h3>
+      <!-- Content for Article 38 -->
+      <h3 id="article39">제39조: 제3국의 적합성 평가 기관</h3>
+      <!-- Content for Article 39 -->
+
+      <h2 id="section5">제5절: 표준, 적합성 평가, 인증서, 등록</h2>
+      <h3 id="article40">제40조: 조화된 표준 및 표준화 산출물</h3>
+      <!-- Content for Article 40 -->
+      <h3 id="article41">제41조: 공통 사양</h3>
+      <!-- Content for Article 41 -->
+      <h3 id="article42">제42조: 특정 요구사항에 대한 준수 추정</h3>
+      <!-- Content for Article 42 -->
+      <h3 id="article43">제43조: 적합성 평가</h3>
+      <!-- Content for Article 43 -->
+      <h3 id="article44">제44조: 인증서</h3>
+      <!-- Content for Article 44 -->
+      <h3 id="article45">제45조: 통지된 기관의 정보 의무</h3>
+      <!-- Content for Article 45 -->
+      <h3 id="article46">제46조: 적합성 평가 절차의 면제</h3>
+      <!-- Content for Article 46 -->
+      <h3 id="article47">제47조: EU 적합성 선언</h3>
+      <!-- Content for Article 47 -->
+      <h3 id="article48">제48조: CE 마크</h3>
+      <!-- Content for Article 48 -->
+      <h3 id="article49">제49조: 등록</h3>
+      <!-- Content for Article 49 -->
+
+      <h1 id="chapter4">제4장: 특정 인공지능 시스템 및 범용 인공지능 모델의 제공자 및 배포자의 투명성 의무</h1>
+      <h2 id="article50">제50조: 특정 인공지능 시스템 및 범용 인공지능 모델의 제공자 및 사용자에 대한 투명성 의무</h2>
+      <!-- Content for Article 50 -->
+
+      <h1 id="chapter5">제5장: 범용 인공지능 모델</h1>
+      <h2 id="section6">제1절: 분류 규칙</h2>
+      <h3 id="article51">제51조: 체계적 위험이 있는 범용 인공지능 모델의 분류</h3>
+      <!-- Content for Article 51 -->
+      <h3 id="article52">제52조: 절차</h3>
+      <!-- Content for Article 52 -->
+
+      <h2 id="section7">제2절: 범용 인공지능 모델 제공자의 의무</h2>
+      <h3 id="article53">제53조: 범용 인공지능 모델 제공자의 의무</h3>
+      <!-- Content for Article 53 -->
+      <h3 id="article54">제54조: 공인 대리인</h3>
+      <!-- Content for Article 54 -->
+
+      <h2 id="section8">제3절: 체계적 위험이 있는 범용 인공지능 모델 제공자의 의무</h2>
+      <h3 id="article55">제55조: 체계적 위험이 있는 범용 인공지능 모델 제공자의 의무</h3>
+      <!-- Content for Article 55 -->
+      <h3 id="article56">제56조: 실천 규범</h3>
+      <!-- Content for Article 56 -->
+
+      <h1 id="chapter6">제6장: 혁신 지원을 위한 조치</h1>
+      <h2 id="article57">제57조: 인공지능 규제 샌드박스</h2>
+      <!-- Content for Article 57 -->
+      <h2 id="article58">제58조: 인공지능 규제 샌드박스의 상세한 준비 및 운영</h2>
+      <!-- Content for Article 58 -->
+      <h2 id="article59">제59조: 인공지능 규제 샌드박스 내 공익 목적을 위한 특정 인공지능 시스템 개발을 위한 개인정보의 추가 처리</h2>
+      <!-- Content for Article 59 -->
+      <h2 id="article60">제60조: 인공지능 규제 샌드박스 외부에서 실제 조건 하의 고위험 인공지능 시스템 시험</h2>
+      <!-- Content for Article 60 -->
+      <h2 id="article61">제61조: 인공지능 규제 샌드박스 외부에서 실제 조건 하의 시험에 참여하기 위한 사전 동의</h2>
+      <!-- Content for Article 61 -->
+      <h2 id="article62">제62조: 특히 중소기업, 신생 기업을 위한 제공자 및 배포자를 위한 조치</h2>
+      <!-- Content for Article 62 -->
+      <h2 id="article63">제63조: 특정 운영자를 위한 면제</h2>
+      <!-- Content for Article 63 -->
+
+      <h1 id="chapter7">제7장: 거버넌스</h1>
+      <h2 id="section9">제1절: 연합 수준의 거버넌스</h2>
+      <h3 id="article64">제64조: 인공지능 사무국</h3>
+      <!-- Content for Article 64 -->
+      <h3 id="article65">제65조: 유럽 인공지능 위원회의 설립 및 구조</h3>
+      <!-- Content for Article 65 -->
+      <h3 id="article66">제66조: 위원회의 임무</h3>
+      <!-- Content for Article 66 -->
+      <h3 id="article67">제67조: 자문 포럼</h3>
+      <!-- Content for Article 67 -->
+      <h3 id="article68">제68조: 독립 전문가로 구성된 과학 패널</h3>
+      <!-- Content for Article 68 -->
+      <h3 id="article69">제69조: 회원국의 전문가 풀 접근</h3>
+      <!-- Content for Article 69 -->
+
+      <h2 id="section10">제2절: 국가 권한 기관</h2>
+      <h3 id="article70">제70조: 국가 권한 기관 및 단일 연락 지점 지정</h3>
+      <!-- Content for Article 70 -->
+
+      <h1 id="chapter8">제8장: 고위험 인공지능 시스템을 위한 EU 데이터베이스</h1>
+      <h2 id="article71">제71조: 부속서 III에 나열된 고위험 인공지능 시스템을 위한 EU 데이터베이스</h2>
+      <!-- Content for Article 71 -->
+
+      <h1 id="chapter9">제9장: 시장 후 감시, 정보 공유, 시장 감시</h1>
+      <h2 id="section11">제1절: 시장 후 감시</h2>
+      <h3 id="article72">제72조: 제공자에 의한 시장 후 감시 및 고위험 인공지능 시스템에 대한 시장 후 감시 계획</h3>
+      <!-- Content for Article 72 -->
+
+      <h2 id="section12">제2절: 중대한 사고에 대한 정보 공유</h2>
+      <h3 id="article73">제73조: 중대한 사고 보고</h3>
+      <!-- Content for Article 73 -->
+
+      <h2 id="section13">제3절: 집행</h2>
+      <h3 id="article74">제74조: 연합 시장에서의 인공지능 시스템의 시장 감시 및 통제</h3>
+      <!-- Content for Article 74 -->
+      <h3 id="article75">제75조: 범용 인공지능 시스템의 상호 지원, 시장 감시 및 통제</h3>
+      <!-- Content for Article 75 -->
+      <h3 id="article76">제76조: 시장 감시 기관에 의한 실제 조건 하의 시험 감독</h3>
+      <!-- Content for Article 76 -->
+      <h3 id="article77">제77조: 기본권 보호 기관의 권한</h3>
+      <!-- Content for Article 77 -->
+      <h3 id="article78">제78조: 기밀성</h3>
+      <!-- Content for Article 78 -->
+      <h3 id="article79">제79조: 국가 수준에서 위험을 제기하는 인공지능 시스템 처리 절차</h3>
+      <!-- Content for Article 79 -->
+      <h3 id="article80">제80조: 부속서 III 적용에 따른 제공자가 고위험으로 분류하지 않은 인공지능 시스템 처리 절차</h3>
+      <!-- Content for Article 80 -->
+      <h3 id="article81">제81조: 연합 보호 절차</h3>
+      <!-- Content for Article 81 -->
+      <h3 id="article82">제82조: 위험을 제기하는 적합한 인공지능 시스템</h3>
+      <!-- Content for Article 82 -->
+      <h3 id="article83">제83조: 공식적인 비준수</h3>
+      <!-- Content for Article 83 -->
+      <h3 id="article84">제84조: 연합 인공지능 시험 지원 구조</h3>
+      <!-- Content for Article 84 -->
+
+      <h2 id="section14">제4절: 구제책</h2>
+      <h3 id="article85">제85조: 시장 감시 기관에 불만을 제기할 권리</h3>
+      <!-- Content for Article 85 -->
+      <h3 id="article86">제86조: 개별 의사결정에 대한 설명을 받을 권리</h3>
+      <!-- Content for Article 86 -->
+      <h3 id="article87">제87조: 위반 보고 및 보고자 보호</h3>
+      <!-- Content for Article 87 -->
+
+      <h2 id="section15">제5절: 범용 인공지능 모델 제공자에 대한 감독, 조사, 집행 및 모니터링</h2>
+      <h3 id="article88">제88조: 범용 인공지능 모델 제공자에 대한 의무 집행</h3>
+      <!-- Content for Article 88 -->
+      <h3 id="article89">제89조: 모니터링 조치</h3>
+      <!-- Content for Article 89 -->
+      <h3 id="article90">제90조: 과학 패널에 의한 체계적 위험 경고</h3>
+      <!-- Content for Article 90 -->
+      <h3 id="article91">제91조: 문서 및 정보 요청 권한</h3>
+      <!-- Content for Article 91 -->
+      <h3 id="article92">제92조: 평가 수행 권한</h3>
+      <!-- Content for Article 92 -->
+      <h3 id="article93">제93조: 조치 요청 권한</h3>
+      <!-- Content for Article 93 -->
+      <h3 id="article94">제94조: 범용 인공지능 모델의 경제 운영자에 대한 절차적 권리</h3>
+      <!-- Content for Article 94 -->
+
+      <h1 id="chapter10">제10장: 행동 강령 및 지침</h1>
+      <h2 id="article95">제95조: 특정 요구사항의 자발적 적용을 위한 행동 강령</h2>
+      <!-- Content for Article 95 -->
+      <h2 id="article96">제96조: 이 규정의 시행에 관한 위원회의 지침</h2>
+      <!-- Content for Article 96 -->
+
+      <h1 id="chapter11">제11장: 권한 위임 및 위원회 절차</h1>
+      <h2 id="article97">제97조: 권한 위임의 행사</h2>
+      <!-- Content for Article 97 -->
+      <h2 id="article98">제98조: 위원회 절차</h2>
+      <!-- Content for Article 98 -->
+
+      <h1 id="chapter12">제12장: 기밀성과 벌칙</h1>
+      <h2 id="article99">제99조: 벌칙</h2>
+      <!-- Content for Article 99 -->
+      <h2 id="article100">제100조: 연합 기관, 기관 및 기구에 대한 행정 벌금</h2>
+      <!-- Content for Article 100 -->
+      <h2 id="article101">제101조: 범용 인공지능 모델 제공자에 대한 벌금</h2>
+      <!-- Content for Article 101 -->
+
+      <h1 id="chapter13">제13장: 최종 규정</h1>
+      <h2 id="article102">제102조: 규정 (EC) No 300/2008의 수정</h2>
+      <!-- Content for Article 102 -->
+      <h2 id="article103">제103조: 규정 (EU) No 167/2013의 수정</h2>
+      <!-- Content for Article 103 -->
+      <h2 id="article104">제104조: 규정 (EU) No 168/2013의 수정</h2>
+      <!-- Content for Article 104 -->
+      <h2 id="article105">제105조: 지침 2014/90/EU의 수정</h2>
+      <!-- Content for Article 105 -->
+      <h2 id="article106">제106조: 지침 (EU) 2016/797의 수정</h2>
+      <!-- Content for Article 106 -->
+      <h2 id="article107">제107조: 규정 (EU) 2018/858의 수정</h2>
+      <!-- Content for Article 107 -->
+      <h2 id="article108">제108조: 규정 (EU) 2018/1139의 수정</h2>
+      <!-- Content for Article 108 -->
+      <h2 id="article109">제109조: 규정 (EU) 2019/2144의 수정</h2>
+      <!-- Content for Article 109 -->
+      <h2 id="article110">제110조: 지침 (EU) 2020/1828의 수정</h2>
+      <!-- Content for Article 110 -->
+      <h2 id="article111">제111조: 이미 시장에 출시되었거나 사용 개시된 인공지능 시스템</h2>
+      <!-- Content for Article 111 -->
+      <h2 id="article112">제112조: 평가 및 검토</h2>
+      <!-- Content for Article 112 -->
+      <h2 id="article113">제113조: 발효 및 적용</h2>
+      <!-- Content for Article 113 -->
+
+      <h1 id="annex">부속서</h1>
+      <h2 id="annex1">부속서 I: 연합 조화 입법 목록</h2>
+      <!-- Content for Annex I -->
+      <h2 id="annex2">부속서 II: 범죄 목록</h2>
+      <!-- Content for Annex II -->
+      <h2 id="annex3">부속서 III: 고위험 인공지능 시스템</h2>
+      <!-- Content for Annex III -->
+      <h2 id="annex4">부속서 IV: 기술 문서</h2>
+      <!-- Content for Annex IV -->
+      <h2 id="annex5">부속서 V: EU 적합성 선언</h2>
+      <!-- Content for Annex V -->
+      <h2 id="annex6">부속서 VI: 내부 통제 기반 적합성 평가 절차</h2>
+      <!-- Content for Annex VI -->
+      <h2 id="annex7">부속서 VII: 품질 관리 시스템 평가 및 기술 문서 평가 기반 적합성</h2>
+      <!-- Content for Annex VII -->
+      <h2 id="annex8">부속서 VIII: 고위험 인공지능 시스템 등록 시 제출할 정보 (제49조)</h2>
+      <!-- Content for Annex VIII -->
+      <h2 id="annex9">부속서 IX: 고위험 인공지능 시스템 등록 시 제출할 정보 (부속서 III / 제60조)</h2>
+      <!-- Content for Annex IX -->
+      <h2 id="annex10">부속서 X: 자유, 보안 및 정의 영역에서 대규모 IT 시스템에 관한 연합 입법</h2>
+      <!-- Content for Annex X -->
+      <h2 id="annex11">부속서 XI: 제53조(1a)에 명시된 기술 문서</h2>
+      <!-- Content for Annex XI -->
+      <h2 id="annex12">부속서 XII: 제53조(1b)에 명시된 투명성 정보</h2>
+      <!-- Content for Annex XII -->
+      <h2 id="annex13">부속서 XIII: 체계적 위험이 있는 범용 인공지능 모델 지정 기준</h2>
+      <!-- Content for Annex XIII -->
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
